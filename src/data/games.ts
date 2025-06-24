@@ -8,7 +8,7 @@ export interface Game {
   category: '레이싱' | '컨트롤' | '리액션' | '자유' | '슬롯';
   isAward?: boolean;
   author: string;
-  awardType?: '창의상' | '디자인상' | '완성상' | '발표상' | '협력상' | '감동상' | '대상';
+  awardType?: '창의상' | '디자인상' | '감동상' | '대상';
 }
 
 export const games: Game[] = [
@@ -53,14 +53,17 @@ export const games: Game[] = [
     category: '리액션'
   },
   {
+    //디자인상 수상자
     id: '5',
     title: '로켓 게임',
     description: '6-4반 친구가 만든 게임입니다.',
     image: 'game5Image',
-    scratchUrl: 'https://scratch.mit.edu/projects/1179516115',
+    scratchUrl: 'https://scratch.mit.edu/projects/1179516158',
     classNumber: '6-4',
     author: 'Block0324',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '디자인상'
   },
   {
     id: '6',
@@ -93,6 +96,7 @@ export const games: Game[] = [
     category: '자유'
   },
   {
+    // 감동상 수상자
     id: '9',
     title: '딸바사모',
     description: '6-4반 친구가 만든 게임입니다.',
@@ -100,9 +104,12 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1184619442',
     classNumber: '6-4',
     author: 'zzongari',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '감동상'
   },
   {
+    // 감동상 수상자
     id: '10',
     title: '꼬미돌을 잡아줘 ㅠㅠ',
     description: '6-4반 친구가 만든 게임입니다.',
@@ -110,7 +117,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1184619998',
     classNumber: '6-4',
     author: 'oliviaya1012',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '감동상'
   },
   {
     id: '11',
@@ -143,6 +152,7 @@ export const games: Game[] = [
     category: '컨트롤'
   },
   {
+    //대상 수상자
     id: '14',
     title: '불가사리 블록 없애기',
     description: '6-4반 친구가 만든 게임입니다.',
@@ -150,7 +160,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1184620430',
     classNumber: '6-4',
     author: 'abcdpotato',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '대상'
   },
   {
     id: '15',
@@ -163,6 +175,7 @@ export const games: Game[] = [
     category: '자유'
   },
   {
+    //디자인상 수상자
     id: '16',
     title: '암냠냠',
     description: '6-4반 친구가 만든 게임입니다.',
@@ -170,9 +183,12 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1179514597',
     classNumber: '6-4',
     author: 'yun139',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '디자인상'
   },
-  {
+  { 
+    //창의상 수상자
     id: '17',
     title: '홈런더비',
     description: '6-4반 친구가 만든 게임입니다.',
@@ -180,7 +196,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1184621383',
     classNumber: '6-4',
     author: 'kbos2',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '창의상'
   },
   {
     id: '18',
@@ -194,12 +212,12 @@ export const games: Game[] = [
   },
   {
     id: '19',
-    title: '슈퍼마리오Remix',
-    description: '6-4반 친구가 만든 게임입니다.',
+    title: '쌈뽕한 겜',
+    description: '6-5반 친구가 만든 게임입니다.',
     image: 'game19Image',
-    scratchUrl: 'https://scratch.mit.edu/projects/1179514850',
-    classNumber: '6-4',
-    author: 'muck_dang',
+    scratchUrl: 'https://scratch.mit.edu/projects/1182612953/',
+    classNumber: '6-5',
+    author: 'lamhandsome77',
     category: '자유'
   },
   {
@@ -213,6 +231,7 @@ export const games: Game[] = [
     category: '리액션'
   },
   {
+    //창의상 수상자
     id: '21',
     title: 'arrow Game',
     description: '6-5반 친구가 만든 게임입니다.',
@@ -220,7 +239,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1172626486',
     classNumber: '6-5',
     author: 'rlarkddb',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '창의상'
   },
   {
     id: '22',
@@ -230,9 +251,10 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1179527626',
     classNumber: '6-5',
     author: 'rlarkddb',
-    category: '자유'
+    category: '슬롯'
   },
   {
+    //감동상 수상자
     id: '23',
     title: '슬롯 게임',
     description: '6-5반 친구가 만든 게임입니다.',
@@ -240,7 +262,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1179525268',
     classNumber: '6-5',
     author: 'leo_jinjin3',
-    category: '슬롯'
+    category: '슬롯',
+    isAward: true,
+    awardType: '감동상'
   },
   {
     id: '24',
@@ -263,21 +287,24 @@ export const games: Game[] = [
     category: '슬롯'
   },
   {
+    //디자인상 수상자
     id: '26',
     title: '아리룰렛',
     description: '6-5반 친구가 만든 게임입니다.',
     image: 'game26Image',
-    scratchUrl: 'https://scratch.mit.edu/projects/1179528283',
+    scratchUrl: 'https://scratch.mit.edu/projects/1179528237',
     classNumber: '6-5',
     author: 'sponjyari1016',
-    category: '슬롯'
+    category: '슬롯',
+    isAward: true,
+    awardType: '디자인상'
   },
   {
     id: '27',
-    title: '타타맨이 게이가 되어가는 과정',
+    title: '타티맨이 게이가 되어가는 과정',
     description: '6-5반 친구가 만든 게임입니다.',
     image: 'game27Image',
-    scratchUrl: 'https://scratch.mit.edu/projects/1179533844',
+    scratchUrl: 'https://scratch.mit.edu/projects/1179533834',
     classNumber: '6-5',
     author: 'clwmwngks',
     category: '자유'
@@ -287,7 +314,7 @@ export const games: Game[] = [
     title: '병아리!',
     description: '6-5반 친구가 만든 게임입니다.',
     image: 'game28Image',
-    scratchUrl: 'https://scratch.mit.edu/projects/1179538066',
+    scratchUrl: 'https://scratch.mit.edu/projects/1179538064',
     classNumber: '6-5',
     author: 'jia1218',
     category: '레이싱'
@@ -303,6 +330,7 @@ export const games: Game[] = [
     category: '리액션'
   },
   {
+    //대상 수상자
     id: '30',
     title: '원숭이 게임',
     description: '6-5반 친구가 만든 게임입니다.',
@@ -310,7 +338,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1179526957',
     classNumber: '6-5',
     author: 'pappasii',
-    category: '리액션'
+    category: '리액션',
+    isAward: true,
+    awardType: '대상'
   },
   {
     id: '31',
@@ -323,6 +353,7 @@ export const games: Game[] = [
     category: '레이싱'
   },
   {
+    //디자인상 수상자
     id: '32',
     title: '블록 게임',
     description: '6-5반 친구가 만든 게임입니다.',
@@ -330,7 +361,9 @@ export const games: Game[] = [
     scratchUrl: 'https://scratch.mit.edu/projects/1179527962',
     classNumber: '6-5',
     author: 'dbstj_1024',
-    category: '컨트롤'
+    category: '컨트롤',
+    isAward: true,
+    awardType: '디자인상'
   },
   {
     id: '33',
@@ -344,79 +377,98 @@ export const games: Game[] = [
   },
   {
     id: '34',
-    title: '병아리의 아침식사',
+    title: '퉁퉁퉁퉁사후르',
     description: '6-5반 친구가 만든 게임입니다.',
     image: 'game34Image',
+    scratchUrl: 'https://scratch.mit.edu/projects/1179527353',
+    classNumber: '6-5',
+    author: 'HYUN130614',
+    category: '자유'
+  },
+  {
+    id: '35',
+    title: '병아리의 아침식사',
+    description: '6-5반 친구가 만든 게임입니다.',
+    image: 'game35Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179528163',
     classNumber: '6-5',
     author: 'Eunseo0128',
     category: '레이싱'
   },
   {
-    id: '35',
+    //감동상 수상자
+    id: '36',
     title: '성공률1/27 도ㅂ 아닌 게임',
     description: '6-5반 친구가 만든 게임입니다.',
-    image: 'game35Image',
+    image: 'game36Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179529196',
     classNumber: '6-5',
     author: 'ookpo',
-    category: '슬롯'
+    category: '슬롯',
+    isAward: true,
+    awardType: '감동상'
   },
   {
-    id: '36',
+    id: '37',
     title: '컨트롤 게임',
     description: '6-5반 친구가 만든 게임입니다.',
-    image: 'game36Image',
+    image: 'game37Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179526897',
     classNumber: '6-5',
     author: 'abcdeschool',
     category: '컨트롤'
   },
   {
-    id: '37',
+    id: '38',
     title: '곰바!',
     description: '6-5반 친구가 만든 게임입니다.',
-    image: 'game37Image',
+    image: 'game38Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179530571',
     classNumber: '6-5',
     author: 'Number-one-1',
     category: '리액션'
   },
   {
-    id: '38',
+    //창의상 수상자
+    id: '39',
     title: '상식퀴즈',
     description: '6-5반 친구가 만든 게임입니다.',
-    image: 'game38Image',
+    image: 'game39Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179534725',
     classNumber: '6-5',
     author: 'chan0529',
-    category: '자유'
+    category: '자유',
+    isAward: true,
+    awardType: '창의상'
   },
   {
-    id: '39',
+    id: '40',
     title: '슬롯게임',
     description: '6-5반 친구가 만든 게임입니다.',
-    image: 'game39Image',
+    image: 'game40Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179529544',
     classNumber: '6-5',
     author: 'sungha0422',
     category: '슬롯'
   },
   {
-    id: '40',
+    //창의상 수상자
+    id: '41',
     title: '병아리 잡기',
     description: '6-4반 친구가 만든 게임입니다.',
-    image: 'game40Image',
+    image: 'game41Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1179513601',
     classNumber: '6-4',
     author: 'Leek3939',
-    category: '리액션'
+    category: '리액션',
+    isAward: true,
+    awardType: '창의상'
   },
   {
-    id: '41',
+    id: '42',
     title: '별을 잡아라',
     description: '6-4반 친구가 만든 게임입니다.',
-    image: 'game41Image',
+    image: 'game42Image',
     scratchUrl: 'https://scratch.mit.edu/projects/1176002335/',
     classNumber: '6-4',
     author: '90409sky',
